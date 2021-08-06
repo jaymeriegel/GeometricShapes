@@ -17,14 +17,14 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner teclado;
 		double raio;
-		Circulo c1;
+		Circle c1;
 		double area;
 		
 		teclado = new Scanner(System.in);
 		raio = teclado.nextDouble();
 		teclado.close();
 		
-		c1 = new Circulo(raio);
+		c1 = new Circle(raio);
 		area = c1.getArea();
 		
 		System.out.printf("A = %.4f\n", area);

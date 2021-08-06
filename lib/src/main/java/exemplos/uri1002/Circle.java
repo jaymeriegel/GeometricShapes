@@ -4,12 +4,12 @@
 package exemplos.uri1002;
 
 /**
- * A classe <code>Circulo</code> representa um círculo com raio.
+ * A classe <code>Circle</code> represents a circle w/ radius.
  * 
  * @author Jayme
  *
  */
-public class Circulo {
+public class Circle extends GeometricShapes {
 	
 	/*
 	 * 
@@ -28,7 +28,7 @@ public class Circulo {
 	 * @throws IllegalArgumentException
 	 * 			Quando o valor do raio é menor ou igual a zero.
 	 */
-	public Circulo(double raio) {
+	public Circle(double raio) {
 		super();
 		if (raio <= 0.0) {
 			throw new IllegalArgumentException();
@@ -39,8 +39,13 @@ public class Circulo {
 	/**
 	 * @return the area
 	 */
-	public double getArea() {
+	public Double getArea() {
 		return raio * raio * PI;
+	}
+
+	@Override
+	public String showAttributes() {
+		return "Attributes: raio";
 	}
 
 }
