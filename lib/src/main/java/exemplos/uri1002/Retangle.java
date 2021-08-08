@@ -1,38 +1,41 @@
 package exemplos.uri1002;
+
 /**
  * 
  * @author Chrystian Rocha
  *
  */
-public class Square extends GeometricShapes{
-	private double lado;
+public class Retangle extends GeometricShapes{
+
+	private double lado, altura;
+	
 	/**
-	 * Cria um quadrado com lado <code>lado</code>.
+	 * 
 	 * @param lado
-	 * @throws IllegalArgumentException
-	 * 			Quando o valor do lado é menor ou igual a zero.
+	 * @param altura
 	 */
-	public Square(double lado) {
+	public Retangle(double lado, double altura) {
 		super();
-		if(lado <= 0.0) {
+		if(lado <= 0 || altura <=0) {
 			throw new IllegalArgumentException();
 		}
 		this.lado = lado;
+		this.altura = altura;
 	}
-	
+
 	/**
-	 * return area
+	 * @return the area
 	 */
 	@Override
 	Double getArea() {
 		// TODO Auto-generated method stub
-		return lado * lado;
+		return lado * altura;
 	}
 
 	@Override
 	String showAttributes() {
 		// TODO Auto-generated method stub
-		return "Attributes lado: " + lado;
+		return "Attributes lado: " + lado + " altura: " + altura;
 	}
 
 }
