@@ -7,20 +7,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class RetangleTest {
+public class TriangleTest {
 	@Test
-	public void DeveRetornarAreaComBase3Altura4() {
-		Retangle r1 = new Retangle(3.0, 4.0);
-		double expected = 12.000;
-		double actual = r1.getArea();
+	public void DeveRetornarAreaComBase3Altura5Dot2() {
+		Triangle t1 = new Triangle(3.0, 5.2);
+		double expected = 7.800;
+		double actual = t1.getArea();
 		assertEquals(expected, actual, 0.001);
 	}
 
 	@Test
 	public void DeveRetornarAreaComBase12Dot7Altura10Dot4() {
-		Retangle r1 = new Retangle(12.7, 10.4);
-		double expected = 132.080;
-		double actual = r1.getArea();
+		Triangle t1 = new Triangle(12.7, 15.2);
+		double expected = 96.520;
+		double actual = t1.getArea();
 		assertEquals(expected, actual, 0.001);
 	}
 }

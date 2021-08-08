@@ -10,9 +10,12 @@ public class Retangle extends GeometricShapes{
 	private double lado, altura;
 	
 	/**
+	 * Cria um retangulo com <code>lado</code> e <code>altura</code>.
 	 * 
 	 * @param lado
 	 * @param altura
+	 * 	 * @throws IllegalArgumentException
+	 * 			Quando o valor do lado ou altura é menor ou igual a zero.
 	 */
 	public Retangle(double lado, double altura) {
 		super();

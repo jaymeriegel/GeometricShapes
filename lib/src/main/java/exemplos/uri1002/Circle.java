@@ -22,7 +22,7 @@ public class Circle extends GeometricShapes {
 	private static final double PI = 3.14159;
 
 	/**
-	 * Cria um círculo com raio <code>raio</code>.
+	 * Cria um círculo com <code>raio</code>.
 	 * 
 	 * @param raio o raio do novo círculo
 	 * @throws IllegalArgumentException

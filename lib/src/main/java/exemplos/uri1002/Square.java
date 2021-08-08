@@ -6,8 +6,10 @@ package exemplos.uri1002;
  */
 public class Square extends GeometricShapes{
 	private double lado;
+	
 	/**
-	 * Cria um quadrado com lado <code>lado</code>.
+	 * Cria um quadrado com <code>lado</code>.
+	 * 
 	 * @param lado
 	 * @throws IllegalArgumentException
 	 * 			Quando o valor do lado é menor ou igual a zero.
